@@ -1,0 +1,302 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff4f2">
+  <meta name="description" content="A little gift, just for you.">
+
+  <title>A little gift for you ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <div class="floating-heart heart-one" aria-hidden="true">♡</div>
+  <div class="floating-heart heart-two" aria-hidden="true">♡</div>
+  <div class="floating-heart heart-three" aria-hidden="true">✧</div>
+
+  <main class="gift-card">
+    <div class="card-glow" aria-hidden="true"></div>
+
+    <!-- QUESTION SCREEN -->
+    <section class="screen entrance-screen" id="question-screen" aria-labelledby="question-title">
+      <div class="mini-heart" aria-hidden="true">♡</div>
+
+      <p class="eyebrow">A tiny question for you</p>
+
+      <h1 id="question-title">
+        Will you accept<br>
+        the gift<span class="title-period">?</span>
+      </h1>
+
+      <p class="intro-copy">I made something little, but full of love.</p>
+
+      <video class="gift-image" autoplay loop muted playsinline aria-label="Gift animation">
+        <source src="assets/gift-animation.mp4" type="video/mp4">
+      </video>
+
+      <div class="button-row">
+        <button class="answer-button yes-button" id="yes-button" type="button">
+          Yes! <span aria-hidden="true">♡</span>
+        </button>
+
+        <button class="answer-button no-button" id="no-button" type="button">
+          No
+        </button>
+      </div>
+
+      <p class="hint">Choose wisely <span aria-hidden="true">♡</span></p>
+    </section>
+
+    <!-- GIFT OPTIONS -->
+    <section class="screen options-screen" id="options-screen" aria-labelledby="options-title" hidden>
+      <div class="mini-heart" aria-hidden="true">♡</div>
+
+      <p class="eyebrow">Best answer ever</p>
+
+      <h1 id="options-title">A present for you<span class="title-period">.</span></h1>
+
+      <p class="message">A few little things, made to bring you a smile.</p>
+
+      <div class="gift-options">
+        <button class="gift-option" type="button" data-story="song-panel" aria-label="Open a song for you">
+          <span class="option-number">01</span>
+
+          <span class="option-art">
+            <video class="gift-option-preview" autoplay loop muted playsinline aria-hidden="true">
+              <source src="assets/gift-flower.mp4" type="video/mp4">
+            </video>
+          </span>
+
+          <span class="gift-option-label">
+            A song for you <span aria-hidden="true">↗</span>
+          </span>
+        </button>
+
+        <button class="gift-option" type="button" data-story="memories-panel" aria-label="Open memories gift">
+          <span class="option-number">02</span>
+
+          <span class="option-art">
+            <video class="gift-option-preview" autoplay loop muted playsinline aria-hidden="true">
+              <source src="assets/gift-hearts.mp4" type="video/mp4">
+            </video>
+          </span>
+
+          <span class="gift-option-label">
+            Little moments <span aria-hidden="true">↗</span>
+          </span>
+        </button>
+
+        <button class="gift-option" type="button" data-story="letter-panel" aria-label="Open a little note for you">
+          <span class="option-number">03</span>
+
+          <span class="option-art">
+            <video class="gift-option-preview" autoplay loop muted playsinline aria-hidden="true">
+              <source src="assets/gift-cat.mp4" type="video/mp4">
+            </video>
+          </span>
+
+          <span class="gift-option-label">
+            A little note <span aria-hidden="true">↗</span>
+          </span>
+        </button>
+      </div>
+
+      <button class="answer-button no-button back-button" id="back-to-question" type="button">
+        Back
+      </button>
+    </section>
+
+    <!-- STORY SCREEN -->
+    <section class="screen story-screen" id="story-screen" aria-label="Your gift story" hidden>
+
+      <!-- SONG -->
+      <section class="story-panel song-panel" id="song-panel" aria-labelledby="song-title" hidden>
+        <div class="story-copy">
+          <p class="story-kicker">Para sa mga araw na mabigat</p>
+
+          <h2 id="song-title">A song for a little comfort.</h2>
+
+          <p>
+            Hi, mawmii! <span aria-hidden="true">♡</span>
+          </p>
+
+          <p>
+            If ever dumating yung araw na parang ang dami mong iniisip or medyo mabigat yung araw mo,
+            pahinga ka muna, ha? Huwag mong pilitin sarili mo na maging okay agad. Take your time lang.
+          </p>
+
+          <p>
+            And if ever gusto mong magkwento, you can always talk to me naman. Kahit random things lang
+            or kahit ano pang nasa isip mo, makikinig ako. Hindi mo rin kailangan magpanggap na okay ka
+            kung hindi naman talaga.
+          </p>
+
+          <p>
+            I know hindi ko naman kayang ayusin lahat ng problema mo, pero if there's anything I can do
+            to make your day a little better, I'd be happy to. No pressure to tell me everything, though.
+            Gusto ko lang malaman mo na may isang taong willing makinig sa'yo.
+          </p>
+
+          <p>
+            So ayun, don't forget to take care of yourself, okay? Eat on time, get enough rest, and don't
+            be too hard on yourself.
+          </p>
+
+          <p class="comfort-signoff">
+            Good luck sa lahat ng ginagawa mo, mawmii. I'm rooting for you always. Hehe. <span aria-hidden="true">♡</span>
+          </p>
+
+          <div class="song-player" aria-label="Song audio player">
+            <div class="song-player-top">
+              <div class="song-cover">
+                <img src="assets/memory-01.jpg" alt="">
+              </div>
+              <div class="song-details">
+                <span class="song-label">A SONG FOR YOU</span>
+                <strong>A Thousand Years</strong>
+                <span class="song-artist">John Michael Howell, JVKE, ZVC</span>
+              </div>
+              <span class="song-player-heart" aria-hidden="true">♡</span>
+            </div>
+            <div class="song-player-controls">
+              <button class="song-play-button" id="song-play-button" type="button" aria-label="Play our song">
+                <span id="song-play-icon" aria-hidden="true">▶</span>
+              </button>
+              <div class="song-timeline">
+                <input class="song-progress" id="song-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+                <div class="song-time">
+                  <span id="song-current-time">0:00</span>
+                  <span id="song-duration">0:00</span>
+                </div>
+              </div>
+            </div>
+            <p class="song-status" id="song-status" aria-live="polite">Press play whenever you need a little encouragement.</p>
+            <audio id="our-song" preload="metadata">
+              <source src="assets/our-song.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+
+        <img class="story-sticker song-sticker"
+             src="assets/story-hug.gif"
+             alt="Two sweet cats sharing a hug">
+      </section>
+
+      <!-- MEMORIES -->
+      <section class="story-panel memories-panel" id="memories-panel" aria-labelledby="memories-title" hidden>
+        <div class="story-copy">
+          <h2 id="memories-title">Little Moments <span aria-hidden="true">♡</span></h2>
+
+          <p>
+            Just some little moments I wanted to keep here.
+          </p>
+
+          <p>
+            Every picture has its own story, and I’m glad I got to share these moments with you.
+          </p>
+
+          <p class="memory-caption">
+            Hopefully, marami pa tayong pictures na madadagdag dito. Hehe. <span aria-hidden="true">♡</span>
+          </p>
+        </div>
+
+        <div class="memory-grid" aria-label="Memory photos">
+          <div class="memory-frame"><img src="assets/memory-01.jpg" alt="Memory photo 1"></div>
+          <div class="memory-frame"><img src="assets/memory-02.jpg" alt="Memory photo 2"></div>
+          <div class="memory-frame"><img src="assets/memory-03.jpg" alt="Memory photo 3"></div>
+          <div class="memory-frame"><img src="assets/memory-04.jpg" alt="Memory photo 4"></div>
+          <div class="memory-frame"><img src="assets/memory-05.jpg" alt="Memory photo 5"></div>
+          <div class="memory-frame"><img src="assets/memory-06.jpg" alt="Memory photo 6"></div>
+          <div class="memory-frame"><img src="assets/memory-07.jpg" alt="Memory photo 7"></div>
+          <div class="memory-frame"><img src="assets/memory-08.jpg" alt="Memory photo 8"></div>
+        </div>
+
+        <img class="story-sticker memory-sticker"
+             src="assets/story-kiss.gif"
+             alt="Two cats cuddling">
+      </section>
+
+      <!-- LOVE LETTER -->
+      <section class="story-panel letter-panel" id="letter-panel" aria-labelledby="letter-title" hidden>
+        <div class="letter-copy">
+          <h2 id="letter-title">A little note for you, mawmii <span aria-hidden="true">♡</span></h2>
+
+          <p>
+            Hey, I know what happened earlier wasn't something you wanted, and I'm sorry na nangyari
+            sa'yo yun. I know nakakainis and nakakalungkot, lalo na kung pinaghirapan mo yung nawala.
+          </p>
+
+          <p>
+            Please don't blame yourself too much, ha? I know it's easier said than done, pero don't be
+            too hard on yourself. Tapos na yung nangyari, and I know it might take a while bago ka
+            maging okay ulit.
+          </p>
+
+          <p>
+            If you feel like ranting about it or gusto mo lang magkwento, you can tell me naman. I'll
+            listen. Hindi man kita matulungan na maibalik yung nawala, I can at least keep you company
+            habang masama pa yung loob mo.
+          </p>
+
+          <p>
+            And please, don't let what happened ruin the way you see yourself, okay? You didn't deserve
+            that.
+          </p>
+
+          <p class="letter-signoff">
+            Ingat ka palagi, mawmii. I hope maging okay ka rin soon. <span aria-hidden="true">♡</span>
+          </p>
+        </div>
+
+        <div class="letter-art">
+          <img class="couple-art"
+               src="assets/our-couple.jpg"
+               alt="A sweet, affectionate illustration">
+
+          <img class="story-sticker letter-sticker"
+               src="assets/story-celebrate.gif"
+               alt="A cat celebrating with confetti">
+        </div>
+      </section>
+
+      <button class="answer-button no-button back-button" id="back-to-gifts" type="button">
+        ← Back to gifts
+      </button>
+    </section>
+
+    <!-- NO / TRY AGAIN SCREEN -->
+    <section class="screen result-screen" id="no-screen" aria-labelledby="no-title" hidden>
+      <div class="mini-heart" aria-hidden="true">♡</div>
+
+      <p class="eyebrow">Oh no...</p>
+
+      <h1 id="no-title">How could you<span class="title-period">?</span></h1>
+
+      <video class="result-image sad-image" autoplay loop muted playsinline aria-label="Crying cat animation">
+        <source src="assets/crying-animation.mp4" type="video/mp4">
+      </video>
+
+      <p class="message">The gift is still yours if you change your mind.</p>
+
+      <button class="answer-button yes-button again-button" type="button">
+        Try again <span aria-hidden="true">♡</span>
+      </button>
+    </section>
+  </main>
+
+  <p class="page-note">
+    Made with a little bit of love <span aria-hidden="true">♡</span>
+  </p>
+</body>
+</html>
